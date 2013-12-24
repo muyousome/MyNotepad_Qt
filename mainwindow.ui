@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>582</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="action_N"/>
+    <addaction name="actionD"/>
+    <addaction name="actionAdd_A"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_S"/>
+    <addaction name="actionSave_As_S"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit_X"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="actionU"/>
+    <addaction name="separator"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionCopy"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_N"/>
+   <addaction name="actionD"/>
+   <addaction name="separator"/>
+   <addaction name="actionSave_As_S"/>
+   <addaction name="actionExit_X"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_N">
+   <property name="icon">
+    <iconset resource="menu.qrc">
+     <normaloff>:/Files/images/01.png</normaloff>:/Files/images/01.png</iconset>
+   </property>
+   <property name="text">
+    <string>New(&amp;N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionD">
+   <property name="icon">
+    <iconset resource="menu.qrc">
+     <normaloff>:/Files/images/02.png</normaloff>:/Files/images/02.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open(&amp;O)</string>
+   </property>
+  </action>
+  <action name="actionAdd_A">
+   <property name="icon">
+    <iconset resource="menu.qrc">
+     <normaloff>:/Files/images/03.png</normaloff>:/Files/images/03.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add(&amp;A)</string>
+   </property>
+  </action>
+  <action name="actionSave_S">
+   <property name="icon">
+    <iconset resource="menu.qrc">
+     <normaloff>:/Files/images/04.png</normaloff>:/Files/images/04.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionSave_As_S">
+   <property name="icon">
+    <iconset resource="menu.qrc">
+     <normaloff>:/Files/images/05.png</normaloff>:/Files/images/05.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionExit_X">
+   <property name="icon">
+    <iconset resource="menu.qrc">
+     <normaloff>:/Files/images/06.png</normaloff>:/Files/images/06.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit(&amp;X)</string>
+   </property>
+  </action>
+  <action name="actionU">
+   <property name="icon">
+    <iconset resource="menu.qrc">
+     <normaloff>:/Files/images/07.png</normaloff>:/Files/images/07.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="menu.qrc">
+     <normaloff>:/Files/images/08.png</normaloff>:/Files/images/08.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="menu.qrc">
+     <normaloff>:/Files/images/09.png</normaloff>:/Files/images/09.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="menu.qrc"/>
+ </resources>
+ <connections/>
+</ui>
