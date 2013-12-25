@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>582</width>
-    <height>397</height>
+    <width>589</width>
+    <height>662</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,21 +25,21 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>582</width>
+     <width>589</width>
      <height>23</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu_F">
+   <widget class="QMenu" name="menu_3">
     <property name="title">
      <string>文件(&amp;F)</string>
     </property>
     <addaction name="action_N"/>
     <addaction name="actionD"/>
-    <addaction name="actionAdd_A"/>
     <addaction name="separator"/>
     <addaction name="actionSave_S"/>
     <addaction name="actionSave_As_S"/>
     <addaction name="separator"/>
+    <addaction name="actionClose"/>
     <addaction name="actionExit_X"/>
    </widget>
    <widget class="QMenu" name="menu">
@@ -48,9 +48,9 @@
     </property>
     <addaction name="actionU"/>
     <addaction name="separator"/>
+    <addaction name="actionCopy"/>
     <addaction name="actionCut"/>
     <addaction name="actionPaste"/>
-    <addaction name="actionCopy"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
@@ -58,7 +58,7 @@
     </property>
     <addaction name="actionAbout"/>
    </widget>
-   <addaction name="menu_F"/>
+   <addaction name="menu_3"/>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
   </widget>
@@ -95,15 +95,6 @@
    </property>
    <property name="text">
     <string>Open(&amp;O)</string>
-   </property>
-  </action>
-  <action name="actionAdd_A">
-   <property name="icon">
-    <iconset resource="menu.qrc">
-     <normaloff>:/Files/images/03.png</normaloff>:/Files/images/03.png</iconset>
-   </property>
-   <property name="text">
-    <string>Add(&amp;A)</string>
    </property>
   </action>
   <action name="actionSave_S">
@@ -168,6 +159,11 @@
   <action name="actionAbout">
    <property name="text">
     <string>关于</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close(&amp;D)</string>
    </property>
   </action>
  </widget>
